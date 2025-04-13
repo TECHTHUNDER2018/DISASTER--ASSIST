@@ -1,0 +1,362 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly; 
+}
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    transition: background-color 0.3s ease;
+}
+
+
+.dropdown-content {
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    padding: 8px 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbtn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.dropbtn:hover {
+    background-color: #575757;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f1f5f9;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #1d4ed8;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .risk-assessment {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.risk-assessment h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.risk-assessment table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.risk-assessment th {
+    background-color: #1a237e;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.risk-assessment td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.risk-assessment tr:hover td {
+    background-color: #2e418e;
+}
+
+.risk-assessment tr:last-child td {
+    border-bottom: none;
+}
+
+/* Risk Level Styles */
+.risk-assessment .high {
+    color: #fff;
+    background-color: #ef5350;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.risk-assessment .moderate {
+    color: #fff;
+    background-color: #ffa726;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.risk-assessment .low {
+    color: #fff;
+    background-color: #66bb6a;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+    .risk-assessment {
+        padding: 1rem;
+    }
+
+    .risk-assessment table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .risk-assessment th,
+    .risk-assessment td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+  .preparedness-tips {
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .tips {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .tip {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .tip .icon {
+    font-size: 2rem;
+  }
+  
+  .downloadable-guides {
+    padding: 2rem;
+  }
+  
+  .guides {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .guide {
+    text-align:center;
+}
+
+.guide {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.guide:hover {
+    transform: translateY(-5px);
+}
+
+.download-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    animation: slideIn 0.3s ease-out;
+    z-index: 1000;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 40px;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #000;}
