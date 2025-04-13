@@ -1,8 +1,9 @@
+---﻿Namaste
 # 🌐 Disaster Assist
 
 _Disaster Assist_ is a comprehensive disaster management platform designed to empower communities and authorities by streamlining communication, coordination, and response during emergencies. It offers a user-friendly web application with a robust feature set, interactive dashboards, real-time updates, and community-driven programs.
 
----
+---﻿namaste
 
 ## 📌 Project Overview
 
@@ -45,7 +46,7 @@ To provide a unified platform that connects community members, emergency respond
 ## 🧠 Technology Stack
 
 - **Frontend**: Figma (UI Design), Html, CSS, Javascript 
-- **Maps & Location**: Google Maps API
+- **Maps & Location**: Google Maps API, OpenWeather API
 - **Notifications**: Firebase Cloud Messaging, Twilio (SMS), SendGrid (Email)
 - **Version Control**: GIT
 
@@ -87,6 +88,7 @@ The system architecture includes:
 - Multilingual support for wider reach.
 - Offline mode for critical updates.
 - Mobile app integration (iOS/Android).
+- Connecting it with Database 
 
 ---
 
